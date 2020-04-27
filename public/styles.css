@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #b2ebf2;
+  color: white;
+  padding: 2em 0;
+}
+
+h1, h2, p, h3, h4 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  padding-bottom: 10px;
+  color: #fdd835;
+}
+
+a:hover, a:focus {
+  color: white;
+}
+
+input {
+  width: 80%;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'Dosis', sans-serif;
+  box-shadow: box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 1em;
+  margin-top: .6em;
+}
+
+button {
+  width: 70%;
+  padding: .6em 2em;
+  background-color: #9575cd;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+form {
+  width: 100%;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+div {
+  margin-bottom: 30px;
+}
+
+/* Hader Section */
+.navigation-container {
+  display: flex;
+  background-color: #00bcd4;
+  color: white;
+  justify-content: center;
+  padding: 0 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 1em;
+  padding-bottom: 20px;
+}
+
+.navbar h1 {
+  width: 100%;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Section Cards */
+.card-container {
+  padding: 1em;
+}
+
+.card {
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-bottom: 3px solid #4a148c;
+  padding: 1.5em;
+  line-height: 1.6
+}
+
+.card-d {
+  border-bottom: 3px solid #b71c1c;
+}
+
+.card-c {
+  border-bottom: 3px solid #76ff03;
+}
+
+.card h3 {
+  margin-bottom: 3px;
+  font-size: 2.2em;
+}
+
+.card h4 {
+  margin-bottom: 3px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-box {
+  padding: 8px;
+}
+
+/* Graph */
+.graph {
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+/* About ME Page */
+.about-container {
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.about-container img {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.about-container p {
+  width: 90%;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+/* Media Quiries */
+@media only screen and (min-width:800px) {
+  .card {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .about-container img {
+    max-width: 900px;
+    margin-bottom: 2em;
+  }
+}
