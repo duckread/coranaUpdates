@@ -36,7 +36,7 @@ input {
   padding: 10px 20px;
   font-size: 16px;
   font-family: 'Dosis', sans-serif;
-  box-shadow: box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 1em;
   margin-top: .6em;
 }
@@ -58,6 +58,19 @@ form {
 
 div {
   margin-bottom: 30px;
+}
+
+/* Country Name */
+.country {
+  width: 100%;
+  margin: 0;
+  margin-top: 2em;
+}
+
+.country h1 {
+  font-family: 'Great Vibes', cursive;
+  color: #880e4f;
+  font-size: 3em;
 }
 
 /* Hader Section */
@@ -100,11 +113,11 @@ div {
 }
 
 .card-d {
-  border-bottom: 3px solid #b71c1c;
+  border-bottom: 3px solid #76ff03;
 }
 
 .card-c {
-  border-bottom: 3px solid #76ff03;
+  border-bottom: 3px solid #b71c1c;
 }
 
 .card h3 {

@@ -6,6 +6,11 @@ const axios = require('axios').default;
 const _ = require("lodash");
 let url = "https://covid.mathdro.id/api/countries/India";
 let dataFeatched ={};
+let countryName = "India";
+
+
+
+
 
 app.set('view engine' , 'ejs');
 app.use(express.static("public"));
@@ -20,32 +25,36 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 app.get("/" ,function(req,res){
 
-
 axios.get(url)
 .then(function(response){
   dataFeatched = response.data
-  res.render("home", {data:dataFeatched})
+  res.render("home", {data:dataFeatched,countryName:countryName})
 })
 .catch(function(err){
   console.log("Error")
 });
 
-
 });
 
+
+
 app.post("/",function(req,res){
-   country = req.body.country;
-   country = _.capitalize(country);
-   url = "https://covid.mathdro.id/api/countries/"+country;
+
+  let country = req.body.country;
+   countryName = _.capitalize(country);
+   url = "https://covid.mathdro.id/api/countries/"+countryName;
+
 
   axios.get(url)
   .then(function(response){
     dataFeatched = response.data
-    res.render("home", {data:dataFeatched})
-    console.log("Data Featched")
+    res.render("home", {data:dataFeatched,countryName:countryName})
+
   })
   .catch(function(err){
-    console.log("Error")
+    res.render("error")
+    url="https://covid.mathdro.id/api/countries/India"
+    countryName="India"
   });
 
 
