@@ -1,6 +1,9 @@
 <%-include("partials/header") -%>
+
+
+
 <div class="country">
-  <h1> <%= countryName %> </h1>
+  <h1> <%= countryName %>  </h1>
 </div>
 <div class="search-box">
   <form class="form-content" action="/" method="post">
@@ -13,30 +16,31 @@
 
 
 <div class="card card-i">
+  <img class="country-image" src="https://www.countryflags.io/<%= code %>/flat/64.png" alt="country flag">
   <h2 class="card-head">Infected</h2>
-  <h3 class="card-count"><%= data.confirmed.value %> </h3>
+  <h3 class="card-count counter"><%= data.confirmed.value %> </h3>
 <p class="card-para">
 <%= data.lastUpdate.substring(0,10)  %>
   </p>
-  <h4>No of active Cases of <br> Covid 19</h4>
+  <h4>No. of active Cases of <br> Covid 19</h4>
 </div>
 
 <div class="card card-d">
   <h2 class="card-head">Recovered</h2>
-  <h3 class="card-count"><%= data.recovered.value %></h3>
+  <h3 class="card-count counter"><%= data.recovered.value %></h3>
 <p class="card-para">
   <%= data.lastUpdate.substring(0,10) %>
   </p>
-  <h4>No of recoverd Cases of <br> Covid 19</h4>
+  <h4>No. of recoverd Cases of <br> Covid 19</h4>
 </div>
 
 <div class="card card-c">
   <h2 class="card-head">Deaths</h2>
-  <h3 class="card-count"><%= data.deaths.value %></h3>
+  <h3 class="card-count counter"><%= data.deaths.value %></h3>
 <p class="card-para">
   <%= data.lastUpdate.substring(0,10)  %>
   </p>
-  <h4>No of death Cases of <br> Covid 19</h4>
+  <h4>No. of death Cases of <br> Covid 19</h4>
 </div>
 
 

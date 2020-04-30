@@ -44,10 +44,15 @@ input {
 button {
   width: 70%;
   padding: .6em 2em;
-  background-color: #9575cd;
-  color: white;
+  background-color: #ffd54f;
+  color: black;
   border-radius: 4px;
   border: 1px solid black;
+}
+
+button:hover, button:focus {
+  background-color: #01579b;
+  color: white;
 }
 
 form {
@@ -95,6 +100,10 @@ div {
 .links {
   display: flex;
   flex-direction: column;
+}
+
+.country-image {
+  float: right;
 }
 
 /* Main Section Cards */
